@@ -149,6 +149,6 @@ import { DataService } from '../../services/data.service';
     </footer>
   `
 })
-export class FooterComponent {
+export class Footer {
   readonly dataService = inject(DataService);
 }

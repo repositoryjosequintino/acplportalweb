@@ -50,56 +50,56 @@ import { DataService } from '../../services/data.service';
           <app-brand-logo [size]="42" />
         </a>
 
-        <!-- Zone 2: Navigation Links (Apple Clean Typography) -->
-        <nav class="hidden lg:flex items-center gap-7 text-[13px] font-medium tracking-tight text-slate-600">
+        <!-- Zone 2: Navigation Links (Apple Clean Typography & Pill Active States) -->
+        <nav class="hidden lg:flex items-center gap-1.5 text-[13px] font-medium tracking-tight text-slate-600">
           <a 
             routerLink="/" 
-            routerLinkActive="text-[#079F50] font-semibold" 
+            routerLinkActive="!text-[#079F50] !bg-emerald-50/80 font-semibold shadow-xs" 
             [routerLinkActiveOptions]="{ exact: true }"
-            class="hover:text-slate-900 transition-colors whitespace-nowrap"
+            class="px-3.5 py-1.5 rounded-full hover:text-slate-900 hover:bg-slate-100/70 transition-all duration-200 whitespace-nowrap"
           >
             Início
           </a>
           <a 
             routerLink="/quem-somos" 
-            routerLinkActive="text-[#079F50] font-semibold" 
-            class="hover:text-slate-900 transition-colors whitespace-nowrap"
+            routerLinkActive="!text-[#079F50] !bg-emerald-50/80 font-semibold shadow-xs" 
+            class="px-3.5 py-1.5 rounded-full hover:text-slate-900 hover:bg-slate-100/70 transition-all duration-200 whitespace-nowrap"
           >
             Quem Somos
           </a>
           <a 
             routerLink="/projetos" 
-            routerLinkActive="text-[#079F50] font-semibold" 
-            class="hover:text-slate-900 transition-colors whitespace-nowrap"
+            routerLinkActive="!text-[#079F50] !bg-emerald-50/80 font-semibold shadow-xs" 
+            class="px-3.5 py-1.5 rounded-full hover:text-slate-900 hover:bg-slate-100/70 transition-all duration-200 whitespace-nowrap"
           >
             Projetos & Ações
           </a>
           <a 
             routerLink="/transparencia" 
-            routerLinkActive="text-[#079F50] font-semibold" 
-            class="hover:text-slate-900 transition-colors whitespace-nowrap flex items-center gap-1"
+            routerLinkActive="!text-[#079F50] !bg-emerald-50/80 font-semibold shadow-xs" 
+            class="px-3.5 py-1.5 rounded-full hover:text-slate-900 hover:bg-slate-100/70 transition-all duration-200 whitespace-nowrap flex items-center gap-1.5"
           >
             <span>Transparência</span>
-            <span class="w-1.5 h-1.5 rounded-full bg-[#079F50]"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-[#079F50] animate-pulse"></span>
           </a>
           <a 
             routerLink="/noticias" 
-            routerLinkActive="text-[#079F50] font-semibold" 
-            class="hover:text-slate-900 transition-colors whitespace-nowrap"
+            routerLinkActive="!text-[#079F50] !bg-emerald-50/80 font-semibold shadow-xs" 
+            class="px-3.5 py-1.5 rounded-full hover:text-slate-900 hover:bg-slate-100/70 transition-all duration-200 whitespace-nowrap"
           >
             Notícias
           </a>
           <a 
             routerLink="/voluntariado" 
-            routerLinkActive="text-[#079F50] font-semibold" 
-            class="hover:text-slate-900 transition-colors whitespace-nowrap"
+            routerLinkActive="!text-[#079F50] !bg-emerald-50/80 font-semibold shadow-xs" 
+            class="px-3.5 py-1.5 rounded-full hover:text-slate-900 hover:bg-slate-100/70 transition-all duration-200 whitespace-nowrap"
           >
             Voluntariado
           </a>
           <a 
             routerLink="/contato" 
-            routerLinkActive="text-[#079F50] font-semibold" 
-            class="hover:text-slate-900 transition-colors whitespace-nowrap"
+            routerLinkActive="!text-[#079F50] !bg-emerald-50/80 font-semibold shadow-xs" 
+            class="px-3.5 py-1.5 rounded-full hover:text-slate-900 hover:bg-slate-100/70 transition-all duration-200 whitespace-nowrap"
           >
             Contato
           </a>
@@ -231,7 +231,7 @@ import { DataService } from '../../services/data.service';
     </header>
   `
 })
-export class HeaderComponent {
+export class Header {
   readonly dataService = inject(DataService);
   readonly mobileMenuOpen = signal<boolean>(false);
 

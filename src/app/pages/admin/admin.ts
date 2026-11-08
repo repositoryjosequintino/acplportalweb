@@ -1032,7 +1032,7 @@ export class AdminComponent {
       partners: ['Instituto Raízes da Comunidade', 'Comunidade Local'],
       results: ['Atividades iniciadas com regularidade.'],
       metrics: [{ label: 'Beneficiários', value: '80 pessoas' }],
-      imageUrl: '/src/assets/images/hero_community_roots_1794165964918.jpg',
+      imageUrl: '/assets/images/hero_community_roots_1794165964918.jpg',
       featured: false
     });
     this.showNewProjectForm.set(false);
@@ -1050,7 +1050,7 @@ export class AdminComponent {
       content: v.content!,
       publishedAt: new Date().toLocaleDateString('pt-BR'),
       author: this.dataService.currentUser().name,
-      imageUrl: '/src/assets/images/project_education_kids_1794165964654.jpg',
+      imageUrl: '/assets/images/project_education_kids_1794165964654.jpg',
       tags: ['Institucional', 'Padre Lúcio'],
       featured: false
     });

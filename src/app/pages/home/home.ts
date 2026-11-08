@@ -58,7 +58,7 @@ import { NotificationService } from '../../services/notification.service';
         <!-- Hero Cinematic Photographic Showcase (Apple Style) -->
         <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200/60 bg-slate-900 aspect-16/9 max-h-[580px] w-full">
           <img 
-            src="/src/assets/images/hero_community_roots_1794165964918.jpg" 
+            src="/assets/images/hero_community_roots_1794165964918.jpg" 
             alt="Comunidade de Padre Lúcio reunida em oficina comunitária do Instituto Raízes da Comunidade" 
             class="w-full h-full object-cover object-center"
             referrerpolicy="no-referrer"
@@ -176,7 +176,7 @@ import { NotificationService } from '../../services/notification.service';
               <div class="space-y-4">
                 <div class="rounded-2xl overflow-hidden shadow-md aspect-4/3 bg-slate-100">
                   <img 
-                    src="/src/assets/images/project_education_kids_1794165964654.jpg" 
+                    src="/assets/images/project_education_kids_1794165964654.jpg" 
                     alt="Oficina pedagógica infantil" 
                     class="w-full h-full object-cover"
                     referrerpolicy="no-referrer"
@@ -195,7 +195,7 @@ import { NotificationService } from '../../services/notification.service';
                 </div>
                 <div class="rounded-2xl overflow-hidden shadow-md aspect-4/3 bg-slate-100">
                   <img 
-                    src="/src/assets/images/project_agroecology_garden_1794165966364.jpg" 
+                    src="/assets/images/project_agroecology_garden_1794165966364.jpg" 
                     alt="Horta agroecológica comunitária" 
                     class="w-full h-full object-cover"
                     referrerpolicy="no-referrer"

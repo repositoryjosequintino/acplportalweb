@@ -8,29 +8,33 @@ import { DataService } from '../../services/data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [RouterLink, MatIconModule],
   template: `
-    <!-- Hero Header -->
-    <section class="bg-white border-b border-slate-100 py-14 lg:py-20">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-[#079F50] text-xs font-semibold">
+    <!-- Hero Header with Apple Ambient Glow -->
+    <section class="bg-white border-b border-slate-100 py-16 lg:py-24 relative overflow-hidden">
+      <!-- Ambient Background Glow -->
+      <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-b from-emerald-100/40 via-sky-100/20 to-transparent blur-3xl pointer-events-none -z-10"></div>
+
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5 relative">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50/90 border border-emerald-500/20 text-[#079F50] text-xs font-semibold shadow-xs">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#079F50] animate-pulse"></span>
           <span>INSTITUCIONAL & HISTÓRIA</span>
         </div>
-        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
           Quem Somos
         </h1>
-        <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-base sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed font-normal">
           A união comunitária que germinou sonhos e hoje cultiva cidadania, educação e dignidade em Padre Lúcio.
         </p>
       </div>
     </section>
 
     <!-- Nossa História & Origem -->
-    <section class="py-16 bg-[#fafbfc] border-b border-slate-200/80">
+    <section class="py-16 sm:py-20 bg-[#fafbfc] border-b border-slate-200/80">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
-        <div class="bg-white p-8 sm:p-12 rounded-3xl border border-slate-200/80 shadow-xs space-y-6">
+        <div class="bg-white p-8 sm:p-12 rounded-3xl border border-slate-200/80 shadow-xs hover:shadow-md transition-all duration-300 space-y-6">
           <div class="space-y-2">
             <span class="text-xs uppercase tracking-widest font-bold text-[#079F50]">Nossa Trajetória</span>
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
               História da Associação Comunitária de Padre Lúcio
             </h2>
           </div>
@@ -47,22 +51,22 @@ import { DataService } from '../../services/data.service';
             </p>
           </div>
 
-          <!-- Key Milestones -->
+          <!-- Key Milestones with Apple Hover Lifts -->
           <div class="pt-6 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-            <div class="p-4 rounded-2xl bg-slate-50">
-              <span class="text-2xl font-extrabold text-[#079F50] block font-mono">2018</span>
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/60 hover:bg-white hover:border-[#079F50]/30 hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-default">
+              <span class="text-2xl sm:text-3xl font-extrabold text-[#079F50] block font-mono">2018</span>
               <span class="text-xs font-semibold text-slate-800">Fundação Comunitária</span>
-              <p class="text-[11px] text-slate-500 mt-1">Início dos mutirões e rodas de conversa.</p>
+              <p class="text-[11px] text-slate-500 mt-1 leading-relaxed">Início dos mutirões e rodas de conversa populares.</p>
             </div>
-            <div class="p-4 rounded-2xl bg-slate-50">
-              <span class="text-2xl font-extrabold text-[#32A5E8] block font-mono">2021</span>
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/60 hover:bg-white hover:border-[#32A5E8]/30 hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-default">
+              <span class="text-2xl sm:text-3xl font-extrabold text-[#32A5E8] block font-mono">2021</span>
               <span class="text-xs font-semibold text-slate-800">Instituto Raízes</span>
-              <p class="text-[11px] text-slate-500 mt-1">Estruturação de projetos pedagógicos e horta.</p>
+              <p class="text-[11px] text-slate-500 mt-1 leading-relaxed">Estruturação de projetos pedagógicos e horta.</p>
             </div>
-            <div class="p-4 rounded-2xl bg-slate-50">
-              <span class="text-2xl font-extrabold text-slate-900 block font-mono">2024-2026</span>
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/60 hover:bg-white hover:border-slate-300 hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-default">
+              <span class="text-2xl sm:text-3xl font-extrabold text-slate-900 block font-mono">2024-2026</span>
               <span class="text-xs font-semibold text-slate-800">MROSC & Parcerias</span>
-              <p class="text-[11px] text-slate-500 mt-1">Convênios públicos com transparência ativa.</p>
+              <p class="text-[11px] text-slate-500 mt-1 leading-relaxed">Convênios públicos com transparência ativa total.</p>
             </div>
           </div>
         </div>
@@ -71,19 +75,19 @@ import { DataService } from '../../services/data.service';
     </section>
 
     <!-- Missão, Visão e Valores (Apple Minimalist Cards) -->
-    <section class="py-16 bg-white border-b border-slate-100">
+    <section class="py-16 sm:py-20 bg-white border-b border-slate-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
           <span class="text-xs uppercase tracking-widest font-bold text-[#079F50]">Princípios Institucionais</span>
-          <h2 class="text-3xl font-extrabold tracking-tight text-slate-900">Missão, Visão e Valores</h2>
-          <p class="text-xs text-slate-500">Diretrizes que orientam cada projeto, decisão e recurso administrado pela instituição.</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">Missão, Visão e Valores</h2>
+          <p class="text-xs sm:text-sm text-slate-500">Diretrizes que orientam cada projeto, decisão e recurso administrado pela instituição.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Missão -->
-          <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-[#079F50]/40 transition-all space-y-4">
-            <div class="w-12 h-12 rounded-2xl bg-emerald-100/60 text-[#079F50] flex items-center justify-center">
+          <div class="p-8 rounded-3xl bg-slate-50/80 border border-slate-200/80 hover:bg-white hover:border-[#079F50]/40 hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-100/60 text-[#079F50] flex items-center justify-center shadow-xs">
               <mat-icon class="text-2xl">flag</mat-icon>
             </div>
             <h3 class="text-xl font-bold text-slate-900">Missão</h3>
@@ -93,8 +97,8 @@ import { DataService } from '../../services/data.service';
           </div>
 
           <!-- Visão -->
-          <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-[#32A5E8]/40 transition-all space-y-4">
-            <div class="w-12 h-12 rounded-2xl bg-sky-100/60 text-[#32A5E8] flex items-center justify-center">
+          <div class="p-8 rounded-3xl bg-slate-50/80 border border-slate-200/80 hover:bg-white hover:border-[#32A5E8]/40 hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-sky-100/60 text-[#32A5E8] flex items-center justify-center shadow-xs">
               <mat-icon class="text-2xl">visibility</mat-icon>
             </div>
             <h3 class="text-xl font-bold text-slate-900">Visão</h3>
@@ -104,27 +108,27 @@ import { DataService } from '../../services/data.service';
           </div>
 
           <!-- Valores -->
-          <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-slate-300 transition-all space-y-4">
-            <div class="w-12 h-12 rounded-2xl bg-slate-200/60 text-slate-800 flex items-center justify-center">
+          <div class="p-8 rounded-3xl bg-slate-50/80 border border-slate-200/80 hover:bg-white hover:border-slate-300 hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-slate-200/60 text-slate-800 flex items-center justify-center shadow-xs">
               <mat-icon class="text-2xl">balance</mat-icon>
             </div>
             <h3 class="text-xl font-bold text-slate-900">Valores</h3>
-            <ul class="text-xs sm:text-sm text-slate-600 space-y-2 leading-relaxed">
+            <ul class="text-xs sm:text-sm text-slate-600 space-y-2.5 leading-relaxed">
               <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#079F50]"></span>
-                <strong>Transparência ativa</strong> e controle social
+                <span class="w-1.5 h-1.5 rounded-full bg-[#079F50] shrink-0"></span>
+                <span><strong>Transparência ativa</strong> e controle social</span>
               </li>
               <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#32A5E8]"></span>
-                <strong>Solidariedade</strong> e acolhimento humano
+                <span class="w-1.5 h-1.5 rounded-full bg-[#32A5E8] shrink-0"></span>
+                <span><strong>Solidariedade</strong> e acolhimento humano</span>
               </li>
               <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-slate-800"></span>
-                <strong>Sustentabilidade</strong> ambiental e alimentar
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-800 shrink-0"></span>
+                <span><strong>Sustentabilidade</strong> ambiental e alimentar</span>
               </li>
               <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#079F50]"></span>
-                <strong>Gestão democrática</strong> e participativa
+                <span class="w-1.5 h-1.5 rounded-full bg-[#079F50] shrink-0"></span>
+                <span><strong>Gestão democrática</strong> e participativa</span>
               </li>
             </ul>
           </div>

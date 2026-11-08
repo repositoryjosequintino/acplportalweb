@@ -85,9 +85,19 @@ app.post('/api/contact', (req, res) => {
   });
 });
 
+const publicFolder = join(process.cwd(), 'public');
+
 /**
- * Serve static files from /browser
+ * Serve static files from public and /browser
  */
+app.use(
+  express.static(publicFolder, {
+    maxAge: '1y',
+    index: false,
+    redirect: false,
+  }),
+);
+
 app.use(
   express.static(browserDistFolder, {
     maxAge: '1y',

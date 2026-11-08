@@ -1,11 +1,28 @@
+<!-- Apple-Style Ultra-Thin Route Progress Indicator -->
+@if (isNavigating()) {
+  <div 
+    class="fixed top-0 left-0 right-0 z-[100] h-[3px] bg-transparent pointer-events-none"
+    role="progressbar"
+    aria-hidden="true"
+  >
+    <div 
+      class="h-full bg-gradient-to-r from-[#079F50] via-[#32A5E8] to-[#079F50] shadow-[0_0_12px_rgba(7,159,80,0.6)] transition-all ease-out"
+      [style.width.%]="navProgress()"
+      [style.transition-duration.ms]="navProgress() === 100 ? 150 : 350"
+    ></div>
+  </div>
+}
+
 @if (!isAdminRoute()) {
   <app-header />
-  <div class="min-h-[85vh]">
+  <main #pageOutlet class="min-h-[85vh] will-change-transform">
     <router-outlet />
-  </div>
+  </main>
   <app-footer />
 } @else {
-  <router-outlet />
+  <main #pageOutlet class="min-h-screen will-change-transform">
+    <router-outlet />
+  </main>
 }
 
 <!-- Floating notification toasts -->

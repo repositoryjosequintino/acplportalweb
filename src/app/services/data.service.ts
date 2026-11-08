@@ -206,7 +206,7 @@ export class DataService {
         { label: 'Horas de Reforço', value: '380 horas' },
         { label: 'Livros no Acervo', value: '410 exemplares' }
       ],
-      imageUrl: '/src/assets/images/project_education_kids_1794165964654.jpg',
+      imageUrl: '/assets/images/project_education_kids_1794165964654.jpg',
       featured: true,
       budget: 45000
     },
@@ -239,7 +239,7 @@ export class DataService {
         { label: 'Mudas no Viveiro', value: '1.250 mudas' },
         { label: 'Famílias Produtoras', value: '75 núcleos' }
       ],
-      imageUrl: '/src/assets/images/project_agroecology_garden_1794165966364.jpg',
+      imageUrl: '/assets/images/project_agroecology_garden_1794165966364.jpg',
       featured: true,
       budget: 62000
     },
@@ -272,7 +272,7 @@ export class DataService {
         { label: 'Memórias Gravadas', value: '12 relatos' },
         { label: 'Apresentações', value: '8 eventos' }
       ],
-      imageUrl: '/src/assets/images/project_culture_music_1794165966001.jpg',
+      imageUrl: '/assets/images/project_culture_music_1794165966001.jpg',
       featured: true,
       budget: 28000
     },
@@ -305,7 +305,7 @@ export class DataService {
         { label: 'Documentos Emitidos', value: '85 certidões' },
         { label: 'Mutirões', value: '4 edições' }
       ],
-      imageUrl: '/src/assets/images/hero_community_roots_1794165964918.jpg',
+      imageUrl: '/assets/images/hero_community_roots_1794165964918.jpg',
       featured: false,
       budget: 35000
     }
@@ -603,7 +603,7 @@ export class DataService {
       category: 'Notícia',
       publishedAt: '03/11/2026',
       author: 'Comunicação Institucional',
-      imageUrl: '/src/assets/images/project_agroecology_garden_1794165966364.jpg',
+      imageUrl: '/assets/images/project_agroecology_garden_1794165966364.jpg',
       tags: ['Agroecologia', 'Padre Lúcio', 'Meio Ambiente', 'Comunidade'],
       featured: true
     },
@@ -616,7 +616,7 @@ export class DataService {
       category: 'Campanha',
       publishedAt: '28/10/2026',
       author: 'Coordenação de Voluntariado',
-      imageUrl: '/src/assets/images/hero_community_roots_1794165964918.jpg',
+      imageUrl: '/assets/images/hero_community_roots_1794165964918.jpg',
       tags: ['Voluntariado', 'Ação Social', 'Participação'],
       featured: true
     },
@@ -629,7 +629,7 @@ export class DataService {
       category: 'Comunicado Oficial',
       publishedAt: '20/10/2026',
       author: 'Diretoria Administrativa',
-      imageUrl: '/src/assets/images/project_education_kids_1794165964654.jpg',
+      imageUrl: '/assets/images/project_education_kids_1794165964654.jpg',
       tags: ['Transparência', 'MROSC', 'Lei 13019', 'Contas Públicas'],
       featured: false
     },
@@ -642,7 +642,7 @@ export class DataService {
       category: 'Evento',
       publishedAt: '12/10/2026',
       author: 'Coordenação Cultural',
-      imageUrl: '/src/assets/images/project_culture_music_1794165966001.jpg',
+      imageUrl: '/assets/images/project_culture_music_1794165966001.jpg',
       tags: ['Cultura', 'Música', 'Juventude', 'Memória'],
       featured: false
     }

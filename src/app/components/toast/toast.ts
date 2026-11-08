@@ -41,6 +41,6 @@ import { MatIconModule } from '@angular/material/icon';
     }
   `
 })
-export class ToastComponent {
+export class Toast {
   readonly notification = inject(NotificationService);
 }
