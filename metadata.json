@@ -1,0 +1,6 @@
+{
+  "name": "Instituto Raízes da Comunidade",
+  "description": "Plataforma institucional e portal da transparência da Associação Comunitária de Padre Lúcio - Instituto Raízes da Comunidade. Governança, prestação de contas MROSC, projetos sociais, notícias e voluntariado.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

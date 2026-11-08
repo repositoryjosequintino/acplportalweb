@@ -1,0 +1,12 @@
+@if (!isAdminRoute()) {
+  <app-header />
+  <div class="min-h-[85vh]">
+    <router-outlet />
+  </div>
+  <app-footer />
+} @else {
+  <router-outlet />
+}
+
+<!-- Floating notification toasts -->
+<app-toast />
