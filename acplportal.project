@@ -1,0 +1,4 @@
+# Versionamento
+
+git config --global user.name "José Quintinno"
+git config --global user.email "josequintino@hotmail.com.br"
